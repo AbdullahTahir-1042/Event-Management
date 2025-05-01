@@ -40,4 +40,15 @@ Events are stored in a **Binary Search Tree (BST)** ordered by `startDateTime` (
   
         g++ -o scheduler scheduler.cpp
         ./scheduler
-  
+
+# ⚙️ Functional Highlights
+
+* Conflict Handling: Prevents insertion of events with the same startDateTime.
+
+* End Time Calculation: Handles overflow when duration spills over into the next hour.
+
+* Day Filtering: Free slots are calculated per day, not across days.
+
+* In-Memory System: No persistence — designed for runtime operation.
+
+
