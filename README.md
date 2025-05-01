@@ -19,12 +19,25 @@ A robust, console-based **Event Scheduling System** implemented in C++. This pro
 Events are stored in a **Binary Search Tree (BST)** ordered by `startDateTime` (`YYYY-MM-DD HH:MM` format). This allows for efficient insertion, traversal, and conflict resolution.
 
 ### Event Node Structure:
-```cpp
-struct Event {
-    int id;
-    string name;
-    string startDateTime;
-    int duration;
-    Event *left;
-    Event *right;
-};
+    ```cpp
+        struct Event {
+              int id;
+              string name;
+              string startDateTime;
+              int duration;
+              Event *left;
+              Event *right;
+          };
+
+# 🛠️ How to Compile and Run
+
+* Prerequisites
+    A C++ compiler like g++.
+  
+* Clone or download the repository.
+
+* Use the following commands to compile and run it.
+  
+        g++ -o scheduler scheduler.cpp
+        ./scheduler
+  
